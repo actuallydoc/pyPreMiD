@@ -31,7 +31,7 @@ while True:  # The presence will stay on as long as the program is running
         RPC.update(details="Working on \n" + str(project_name[0]),state="Editing "+ str(project_name[2]), large_image="pycharm", large_text=hoverText, small_image="online", start=timestamp)
     elif window_name:
         RPC.update(details="Relaxing", large_image="relax", large_text=hoverText, small_image="dnd",
-                  small_text="Do not disturb", buttons=[{"label": "Discord", "url": "https://discord.gg/dxVxWZejYG"}])
+                  small_text="Do not disturb", buttons=[{"label": "Join Discord", "url": "https://discord.gg/dxVxWZejYG"}])
 
 
     time.sleep(2) # Can only update rich presence every 2 seconds
