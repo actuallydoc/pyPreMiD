@@ -7,6 +7,9 @@
 
 
 
+##Implemented features
+-Show the chrome tab title
+-Show the application icon
 
 
 
