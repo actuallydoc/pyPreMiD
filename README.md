@@ -3,4 +3,4 @@
 -My python knowledge is very small and maybe i will stop developing after a while if i give up
 
 - If you want to contribute or fix my code ur free to do so
-https://discord.gg/dxVxWZejYG
+-Join my discord server https://discord.gg/dxVxWZejYG
