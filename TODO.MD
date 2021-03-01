@@ -8,8 +8,9 @@
 
 
 ##Implemented features
--Show the chrome tab title
--Show the application icon
+-Show the chrome tab title# DONE
+-Show the application icon # partly done
+-Add stack over flow support
 
 
 
@@ -18,3 +19,4 @@
 
 ##Creds for modules
 - PyPresence
+- Psutil
