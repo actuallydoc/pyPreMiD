@@ -28,19 +28,21 @@ while True:
         RPC.update(details="Relaxing", large_image="relax", large_text=hoverText, small_image="dnd",
                    small_text="Do not disturb",
                    buttons=[{"label": "Join Discord", "url": "https://discord.gg/dxVxWZejYG"}])
-    print(removeChrome)
+
     #Chrome support only for now
 
     if window_name == "chrome.exe":
 
         if website[-4] == "YouTube":
 
-            print("you are on youtube")
+
             RPC.update(details=GetWindowText(GetForegroundWindow()),state="On YouTube", large_image="youtube", large_text=hoverText,
                        small_image="dnd")
         elif website[-4] == "Search":
-            print("you are on stack google search")
-            RPC.update(details=GetWindowText(GetForegroundWindow()), state="On stack overflow", large_image="googlesearch",
+            del website[-3:]
+            final = " "
+
+            RPC.update(details=final.join(website), state="Exploring the web", large_image="googlesearch",
                        large_text=hoverText,
                        small_image="dnd")
         elif stackoverflow == "Stack Overflow":
@@ -49,7 +51,7 @@ while True:
 
 
 
-            RPC.update(details=final.join(website), state="On stack overflow",
+            RPC.update(details=final.join(website), state="Exploring",
                        large_image="stackoverflow",
                        large_text=hoverText,
                        small_image="dnd")
@@ -65,10 +67,10 @@ while True:
 
     elif window_name == "pycharm64.exe":
 
-        #print("PyCharm is running")
-        project_name = GetWindowText(GetForegroundWindow()).split()
-        #print(project_name[0])
-        RPC.update(details="Working on \n" + str(project_name[0]),state="Editing "+ str(project_name[2]), large_image="pycharm", large_text=hoverText, small_image="online", start=timestamp)
+        try:
+            RPC.update(details="Working on \n" + str(website[0]),state="Editing "+ str(website[2]), large_image="pycharm", large_text=hoverText, small_image="online", start=timestamp)
+        except:
+            RPC.update(details="Browsing", large_image="pycharm", large_text=hoverText, small_image="online", start=timestamp)
     else:
         RPC.update(details="Relaxing", large_image="relax", large_text=hoverText, small_image="dnd",
                   small_text="Do not disturb", buttons=[{"label": "Join Discord", "url": "https://discord.gg/dxVxWZejYG"}])
