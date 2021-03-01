@@ -4,3 +4,4 @@
 
 - If you want to contribute or fix my code ur free to do so
 -Join my discord server https://discord.gg/dxVxWZejYG
+- The goal is to do everything without the extension for now 
