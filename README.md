@@ -7,3 +7,6 @@
 -Join my discord server https://discord.gg/dxVxWZejYG
 - The goal is to do everything without the extension for now 
 - If you will use any of the code atleast give creds for my shitty code XD
+
+
+-I have to figure it out how can i read chrome data and display it without extension if thats even possible
