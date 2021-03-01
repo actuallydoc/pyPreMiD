@@ -1,6 +1,7 @@
 # pyPreMiD
 -This is a similar project as PreMiD made in Python currently in progress
--My python knowledge is very small and maybe i will stop developing after a while if i give up
+-My python knowledge is very limietd right now 
+-when i learn enough ill try to refractor the code to make it more efficent
 
 - If you want to contribute or fix my code ur free to do so
 -Join my discord server https://discord.gg/dxVxWZejYG
