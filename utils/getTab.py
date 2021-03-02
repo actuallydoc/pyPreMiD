@@ -2,7 +2,7 @@ import uiautomation as auto
 
 
 class BrowserWindow:
-    def __init__(self, browser_name, window_index=1):
+    def __init__(self, browser_name: str, window_index=1):
         """
         A Browser Window support UIAutomation.
 

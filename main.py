@@ -10,7 +10,7 @@ from re import search
 load_dotenv()
 
 
-client_id = os.environ.get("clientid")
+client_id = os.environ.get("client_id")
 hoverText = os.environ.get("hoverText")
 RPC = Presence(client_id,pipe=0)
 RPC.connect()
@@ -35,20 +35,21 @@ while True:
                    small_text="Do not disturb",
                    buttons=[{"label": "Join Discord", "url": "https://discord.gg/dxVxWZejYG"}])
     if window_name == "chrome.exe":
-        RPC.clear()
+        
         if bwURL == "https://www.youtube.com":
            
 
             RPC.update(details="Browsing videos",state="On YouTube", large_image="youtube", large_text=hoverText,
                         small_image="dnd", buttons=[{"label": "Watch with me", "url": bwURL}])
         elif  search("https://www.youtube.com", bwURL):
+            
             url = bwURL
             video = pafy.new(url)
             print(video)
             RPC.update(details="Watching",state=empty.join(website[:-5]), large_image="youtube", large_text=hoverText,
-                        small_image="dnd", buttons=[{"label": "Watch with me", "url": bwURL}])
+                        small_image="dnd", buttons=[{"label": "Watch with me", "url": bwURL}], start=time.time())
         else:
-
+           
             RPC.update(details="Relaxing", large_image="relax", large_text=hoverText, small_image="dnd",
                     small_text="Do not disturb", buttons=[{"label": "Look with me", "url": bwURL}])
     else:
@@ -58,7 +59,7 @@ while True:
  
      
      
-    time.sleep(5)    
+    
      
      
      
