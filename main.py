@@ -35,7 +35,7 @@ while True:
                    small_text="Do not disturb",
                    buttons=[{"label": "Join Discord", "url": "https://discord.gg/dxVxWZejYG"}])
     if window_name == "chrome.exe":
-        
+        print("Chrome was detected")
         if bwURL == "https://www.youtube.com":
            
 
@@ -45,7 +45,7 @@ while True:
             
             url = bwURL
             video = pafy.new(url)
-            print(video)
+
             RPC.update(details="Watching",state=empty.join(website[:-5]), large_image="youtube", large_text=hoverText,
                         small_image="dnd", buttons=[{"label": "Watch with me", "url": bwURL}], start=time.time())
         else:
