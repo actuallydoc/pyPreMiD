@@ -1,4 +1,5 @@
-# pyPreMiD
+# This got discontinued ill remake everything later in js probably
+pyPreMiD
 -This is a similar project as PreMiD made in Python currently in progress
 -My python knowledge is very limietd right now 
 -when i learn enough ill try to refractor the code to make it more efficent
